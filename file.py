@@ -5,4 +5,6 @@ def sub(a, b):
     return a - b
 
 def divide(a, b):
-    return (a / b) + 1
+    if b == 0:
+        raise "Division by zero is not supported"
+    return a / b
